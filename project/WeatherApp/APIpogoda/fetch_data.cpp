@@ -7,8 +7,8 @@ json fetch_data(string link) {
 
     cpr::Response r = fr.get();
     if (r.error) {
-        Error* wskazniczek = new NoConnection();
-        throw wskazniczek;
+        Error* ptr = new NoConnection();
+        throw ptr;
     }
     json data = json::parse(r.text);
     return data;
