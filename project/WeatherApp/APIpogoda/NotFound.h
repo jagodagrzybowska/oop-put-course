@@ -1,7 +1,6 @@
 #pragma once
 #include "Error.h"
-class NotFound :
-    public Error
+class NotFound : public Error
 {
 private:
     string city_name;

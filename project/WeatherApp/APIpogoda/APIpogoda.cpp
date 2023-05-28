@@ -11,10 +11,9 @@ using namespace std;
 
 
 
-
-ostream& operator<<(ostream& os, Error* err) {
-    os << err->show_error_message() << endl << endl;
-    return os;
+ostream& operator<<(ostream& ot, Error* err) {
+    ot << err->show_error_message() << endl << endl;
+    return ot;
 }
 
 
